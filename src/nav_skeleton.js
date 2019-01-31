@@ -12,5 +12,7 @@ const createLi = () => document.createElement("LI");
 
 const createSpan = () => document.createElement("SPAN");
 
-export { createNav, createLink, createButton, createDiv, createUl, createLi, createSpan }
+const createImg = () => document.createElement("IMG");
+
+export { createNav, createLink, createButton, createDiv, createUl, createLi, createSpan, createImg }
 

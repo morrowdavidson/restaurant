@@ -2,6 +2,8 @@
 Restaurant Project for The Odin Project (https://www.theodinproject.com/lessons/restaurant-page)
 
 
+Reimagining http://expatriatepdx.com/
+
 
     Start the project the same way you began the webpack tutorial project.
 

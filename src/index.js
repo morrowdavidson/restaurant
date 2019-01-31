@@ -1,11 +1,23 @@
-import { createNav, createLink, createButton, createDiv, createUl, createLi, createSpan } from './nav_skeleton'
+import { createNav, createLink, createButton, createDiv, createUl, createLi, createSpan, createImg } from './nav_skeleton'
 
 let mainNav = createNav();
 mainNav.className = "navbar navbar-expand-md navbar-dark bg-dark";
 
 let homeLink = createLink();
 homeLink.className = "navbar-brand";
-homeLink.innerHTML = "HOME"; 
+homeLink.innerText = "expatriate"; 
+homeLink.setAttribute("href", "#");
+
+
+
+let logo = createImg();
+logo.className = "d-inline-block align-top";
+logo.setAttribute("width", "50");
+logo.setAttribute("height", "50");
+logo.setAttribute("src", "logo.png");
+
+homeLink.insertBefore(logo, homeLink.childNodes[0]);
+
 
 let collapseButton = createButton();
 collapseButton.className = "navbar-toggler collapsed";
