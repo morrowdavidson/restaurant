@@ -16,13 +16,17 @@ const pageInfo = {
             text: "ABOUT",
             url: "#"
         },
-
-    }
+    },
+    address: {
+        line1: "5424 NE 30th Ave",
+        line2: "PDX, OR 97211 USA",
+        url: "https://goo.gl/maps/VWVonZEzDP92",
+    },
 }
 
 
 let mainNav = createNav();
-mainNav.className = "navbar navbar-expand-sm navbar-dark bg-dark";
+mainNav.className = "navbar fixed-top navbar-expand-sm navbar-dark bg-dark";
 
 let homeLink = createLink();
 Object.assign(homeLink,{
@@ -60,7 +64,6 @@ navDiv.id = "navBars";
 let navList = createUl();
 navList.className = "navbar-nav mr-auto";
 
-
 let links = Object.entries(pageInfo.links);
 
 for (let i = 0; i + 1 <= links.length; i++){
@@ -76,8 +79,20 @@ for (let i = 0; i + 1 <= links.length; i++){
     navList.appendChild(navItem);
 };
 
-navDiv.appendChild(navList);
 
+
+let address = createLink();
+Object.assign(address,{
+    className: "address",
+    href: pageInfo.address.url,
+})
+address.innerHTML = pageInfo.address.line1 + "<br>" + pageInfo.address.line2;
+
+
+
+
+navDiv.appendChild(navList);
+navDiv.appendChild(address);
 collapseButton.appendChild(collapseIcon);
 
 mainNav.appendChild(homeLink);
@@ -85,4 +100,6 @@ mainNav.appendChild(collapseButton);
 mainNav.appendChild(navDiv);
 
 
-document.getElementById("container").appendChild(mainNav)
+
+
+document.getElementById("mainNav").appendChild(mainNav)
