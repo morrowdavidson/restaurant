@@ -38,12 +38,13 @@ a.address:hover {
 
 div#heroImg {
     overflow: hidden;
-    margin-top:71px;
 }
 
 .navbar-dark {
-    background: -moz-linear-gradient(45deg, #282824 0%, #121416 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #282824 0%,#121416 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #282824 0%,#121416 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282824', endColorstr='#121416',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
+    background: -moz-linear-gradient(45deg, #282824 0%, #121416 100%); 
+    background: -webkit-linear-gradient(45deg, #282824 0%,#121416 100%); 
+    background: linear-gradient(45deg, #282824 0%,#121416 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282824', endColorstr='#121416',GradientType=1 ); 
+  } 
+
+  
